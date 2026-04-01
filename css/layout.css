@@ -1,0 +1,28 @@
+:root {
+  /* кольори */
+  --bg-dark: #000;
+  --text-light: #ffffff;
+  --accent-pink: #ff00cc;
+  --accent-purple: #6a00ff;
+
+  /* шрифти */
+  --font-main: Arial, sans-serif;
+
+  /* контейнер */
+  --container-width: 1500px;
+}
+
+/* база */
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* контейнер */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'ss_drebeden';
+    src: url('ss_drebeden.eot');
+    src: url('ss_drebeden.eot?#iefix') format('embedded-opentype'),
+        url('ss_drebeden.woff2') format('woff2'),
+        url('ss_drebeden.woff') format('woff'),
+        url('ss_drebeden.svg#ss_drebeden') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

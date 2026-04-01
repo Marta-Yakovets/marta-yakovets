@@ -1,0 +1,125 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  /* неоновий фон */
+  background: radial-gradient(
+    circle at center,
+    var(--accent-pink) 0%,
+    #1a001f 60%,
+    #000 80%
+  );
+}
+
+/* ================= TOP ================= */
+
+.hero__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* кнопка */
+.hero__login {
+  background: transparent;
+  border: 1px solid var(--accent-pink);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+
+  box-shadow: 0 0 10px var(--accent-pink);
+}
+
+/* меню */
+.hero__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.hero__nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--accent-pink);
+
+  box-shadow: 0 0 8px var(--accent-pink);
+}
+
+/* ================= TITLE ================= */
+
+.hero__center {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  font-size: 62px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 40px;
+  font-family: "ss_drebeden";
+}
+
+/* ================= VISUAL ================= */
+
+.hero__visual {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* картинка */
+.hero__visual img {
+  max-width: 1277px;
+  width: 200%;
+  display: block;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* слово */
+.hero__word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 356px;
+  font-weight: bold;
+  color: white;
+  font-family: "Advent Pro", sans-serif;
+
+  /* glow ефект */
+  text-shadow:
+    0 0 10px white,
+    0 0 20px var(--accent-pink),
+    0 0 80px var(--accent-purple);
+}
+
+/* ================= ADAPTIVE ================= */
+
+@media (max-width: 768px) {
+  .hero__nav {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 22px;
+  }
+
+  .hero__visual img {
+    max-width: 400px;
+  }
+
+  .hero__word {
+    font-size: 50px;
+  }
+}
